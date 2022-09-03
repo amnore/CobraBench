@@ -17,7 +17,9 @@ import bench.Crack.ROAnomalyBench;
 import bench.Crack.WOROAnomalyBench;
 import bench.Crack.WriteSkewBench;
 import bench.chengTxn.ChengBench;
+import bench.courseware.CoursewareBench;
 import bench.rubis.RubisBench;
+import bench.smallbank.SmallBankBench;
 import bench.tpcc.TPCCBench;
 import bench.twitter.TwitterBench;
 import bench.ycsbt.YCSBTBench;
@@ -87,6 +89,12 @@ public class Planner {
 			break;
 		case WOROANOMALY:
 			this.bench = new WOROAnomalyBench(kvi);
+			break;
+		case SMALLBANK:
+			this.bench = new SmallBankBench(kvi);
+			break;
+		case COURSEWARE:
+			this.bench = new CoursewareBench(kvi);
 			break;
 		default:
 			assert false;

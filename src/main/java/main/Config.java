@@ -48,6 +48,8 @@ public class Config {
 			return "rubis";
 		case TWITTER:
 			return "twitter";
+		case SMALLBANK:
+			return "smallbank";
 		default:
 			assert false;
 			break;
@@ -84,7 +86,7 @@ public class Config {
 	};
 
 	public enum BenchType {
-		CHENG, TPCC, YCSB, RUBIS, TWITTER, WRITESKEW, ROANOMALY, WOROANOMALY,
+		CHENG, TPCC, YCSB, RUBIS, TWITTER, WRITESKEW, ROANOMALY, WOROANOMALY, SMALLBANK, COURSEWARE
 	};
 
 	// mode
